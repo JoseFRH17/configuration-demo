@@ -10,7 +10,7 @@ test:
     key2: "value2"
     key3: "value3"
   nested-properties:
-    property: "value"
+    property: "aValue"
     nested-list:
       - "value1"
       - "value2"
