@@ -4,4 +4,3 @@ This repository tries showcases how to map several properties from the proyect c
 
 ## Resources
 - https://www.baeldung.com/configuration-properties-in-spring-boot
-- 
