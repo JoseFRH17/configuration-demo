@@ -9,7 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 @ConfigurationPropertiesScan
 public class PropertiesDemoApplication {
 
-    @Value("${my.property}")
+    @Value("${test.my-property}")
     String myProperty;
 
     public static void main(String[] args) {

@@ -1,5 +1,6 @@
 package com.leanmind.propertiesdemo;
 
+import com.leanmind.propertiesdemo.properties.MapNameExampleProperties;
 import com.leanmind.propertiesdemo.properties.NestedProperties;
 import com.leanmind.propertiesdemo.properties.TestProperties;
 import org.junit.jupiter.api.Test;
@@ -19,6 +20,9 @@ public class TestPropertiesTest {
 
     @Autowired
     private TestProperties testProperties;
+
+    @Autowired
+    private MapNameExampleProperties mapNameExampleProperties;
 
     @Test
     void should_load_basic_properties() {
@@ -45,5 +49,10 @@ public class TestPropertiesTest {
         assertEquals("aValue", nestedProperties.property());
         assertEquals(3, nestedProperties.nestedList().size());
         assertEquals(List.of("key1","key2","key3"), nestedProperties.nestedMap().keySet().stream().toList());
+    }
+
+    @Test
+    void should_load_property_with_mapped_name(){
+        assertEquals("test", mapNameExampleProperties.getaCoolNamedProperty());
     }
 }
