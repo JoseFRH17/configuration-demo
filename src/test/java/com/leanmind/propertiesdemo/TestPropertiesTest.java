@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
 @ActiveProfiles("test")
-public class TestPropertiesTest {
+class TestPropertiesTest {
 
     @Autowired
     private TestProperties testProperties;
